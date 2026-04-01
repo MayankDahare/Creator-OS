@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { GlassCard } from "@/components/GlassCard";
 import { NeonButton } from "@/components/NeonButton";
+import { SmartToolPipeline } from "@/components/SmartToolPipeline";
 import { getDailyMission } from "@/lib/mockAI";
 import { getStats, trackSession, completeMission, getCreatorLevel, getContentScore } from "@/lib/creatorStore";
 import { Zap, Target, Clock, TrendingUp, Award, Flame, ArrowRight, Brain, PenTool, Hash, BookOpen, Calendar, MessageSquare } from "lucide-react";
@@ -155,6 +156,16 @@ export default function Dashboard() {
           ))}
         </div>
       </div>
+
+      {/* Smart Tool Recommendation Pipeline */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        className="pt-6"
+      >
+        <SmartToolPipeline />
+      </motion.div>
     </div>
   );
 }

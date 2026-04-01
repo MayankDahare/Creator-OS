@@ -14,6 +14,7 @@ import HashtagGenerator from "@/pages/HashtagGenerator";
 import ContentCalendar from "@/pages/ContentCalendar";
 import BioGenerator from "@/pages/BioGenerator";
 import NotFound from "@/pages/NotFound";
+import ToolPipeline from "@/pages/ToolPipeline";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/hashtag-generator" element={<HashtagGenerator />} />
             <Route path="/content-calendar" element={<ContentCalendar />} />
             <Route path="/bio-generator" element={<BioGenerator />} />
+            <Route path="/tool-pipeline" element={<ToolPipeline />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

@@ -1,4 +1,4 @@
-import { Brain, Sparkles, PenTool, TrendingUp, Image, Camera, LayoutDashboard, History, Hash, Calendar, MessageSquare } from "lucide-react";
+import { Brain, Sparkles, PenTool, TrendingUp, Image, Camera, LayoutDashboard, History, Hash, Calendar, MessageSquare, BrainCircuit } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 import { useLocation } from "react-router-dom";
 import {
@@ -19,6 +19,7 @@ const mainItems = [
   { title: "Idea Validator", url: "/idea-validator", icon: Brain },
   { title: "Content Generator", url: "/content-generator", icon: PenTool },
   { title: "Trend Analyzer", url: "/trend-analyzer", icon: TrendingUp },
+  { title: "Smart Pipeline", url: "/tool-pipeline", icon: BrainCircuit },
 ];
 
 const toolItems = [
